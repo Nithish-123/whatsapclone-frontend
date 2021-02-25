@@ -1,0 +1,29 @@
+.signup_page {
+	display: flex;
+	position: relative;
+	top: -200px;
+	width: 80vh;
+	height: 80vh;
+	/* background-color: #ededed; */
+	box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	background-image: url("./bgimage.jpg");
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.signup_container {
+	height: 75%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.error_message {
+	color: #ff3333;
+}
+span {
+	color: black;
+}

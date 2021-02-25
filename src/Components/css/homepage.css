@@ -1,0 +1,53 @@
+.homepage_container {
+	display: flex;
+	position: relative;
+	top: -200px;
+	width: 80vh;
+	height: 80vh;
+	/* background-color: #ededed; */
+	box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	background-image: url("./bgimage.jpg");
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.homepage_login_form {
+	display: flex;
+	width: 50%;
+	height: 80%;
+	border: 1px solid black;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.signup_link {
+	display: flex;
+	justify-content: space-between;
+	width: 54%;
+}
+.inputfield {
+	border-radius: 25px;
+	border: none;
+	padding: 10px;
+}
+.inputfield:focus {
+	outline: none;
+	border: 3px solid #128c7e;
+}
+.login_button {
+	padding: 8px;
+	border-radius: 5px;
+	outline: none;
+	background-color: #128c7e;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.login_button:focus {
+	border: 3px solid #4ac959;
+}
+.error_message {
+	font-size: 20px;
+	color: red;
+}
