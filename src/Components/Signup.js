@@ -10,13 +10,16 @@ function Signup() {
 
 	const signup = async (data) => {
 		const { email, username, password } = data;
-		let user = await fetch("/user/signup", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({ username, email, password }),
-		});
+		let user = await fetch(
+			"https://nithish-whatsapclone.herokuapp.com/user/signup",
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ username, email, password }),
+			}
+		);
 		user = await user.json();
 
 		if (user.message) {

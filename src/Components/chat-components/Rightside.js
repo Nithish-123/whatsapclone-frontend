@@ -46,7 +46,7 @@ function Mainbody(props) {
 	useEffect(() => {
 		const getmessages = async () => {
 			let messagesarr = await fetch(
-				`/messages/get/${username}`,
+				`https://nithish-whatsapclone.herokuapp.com/messages/get/${username}`,
 
 				{
 					method: "POST",

@@ -21,13 +21,16 @@ function Homepage() {
 		const { email, password } = data;
 		/* console.log(data); */
 		if (data) {
-			let user = await fetch("/user/login", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({ email, password }),
-			});
+			let user = await fetch(
+				"https://nithish-whatsapclone.herokuapp.com/user/login",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({ email, password }),
+				}
+			);
 			user = await user.json();
 
 			if (user.message) {

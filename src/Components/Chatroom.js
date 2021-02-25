@@ -18,7 +18,7 @@ function Chatroom(props) {
 	const history = useHistory();
 	const location = useLocation();
 	const [messageformat, setMessageformat] = useState({});
-	const endpoint = "http://localhost:3001";
+	const endpoint = "https://nithish-whatsapclone.herokuapp.com";
 	const [recentmessage, setRecentmessage] = useState({});
 	if (!location.state) {
 		history.push("/");
@@ -44,11 +44,14 @@ function Chatroom(props) {
 	};
 	useEffect(() => {
 		const getfriendsdet = async () => {
-			let friendsarrdet = await fetch("/addfriends", {
-				headers: {
-					Authorization: "Bearer " + token,
-				},
-			});
+			let friendsarrdet = await fetch(
+				"https://nithish-whatsapclone.herokuapp.com/addfriends",
+				{
+					headers: {
+						Authorization: "Bearer " + token,
+					},
+				}
+			);
 			friendsarrdet = await friendsarrdet.json();
 			setFriendsarr(friendsarrdet);
 			/* console.log(friendsarr); */
