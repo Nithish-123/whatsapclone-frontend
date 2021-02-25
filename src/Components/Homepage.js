@@ -11,7 +11,7 @@ function Homepage() {
 		const token = localStorage.getItem("whatsap-token");
 		if (token) {
 			const user = JSON.parse(localStorage.getItem("whatsap-user"));
-			history.push({ pathname: "./chatroom", state: user });
+			history.push({ pathname: "/chatroom", state: user });
 		}
 	};
 	reloadprevent();
