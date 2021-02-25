@@ -10,7 +10,7 @@ function Signup() {
 
 	const signup = async (data) => {
 		const { email, username, password } = data;
-		let user = await fetch("http://localhost:3001/user/signup", {
+		let user = await fetch("/user/signup", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
