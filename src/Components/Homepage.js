@@ -7,14 +7,14 @@ function Homepage() {
 	const { register, handleSubmit, errors } = useForm();
 	const history = useHistory();
 
-	const reloadprevent = () => {
+	/* const reloadprevent = () => {
 		const token = localStorage.getItem("whatsap-token");
 		if (token) {
 			const user = JSON.parse(localStorage.getItem("whatsap-user"));
 			history.push({ pathname: "./chatroom", state: user });
 		}
 	};
-	reloadprevent();
+	reloadprevent(); */
 
 	const loginrequest = async (data) => {
 		localStorage.setItem("whatsap-token", "");
